@@ -1,0 +1,37 @@
+lxk:
+   url: 'http://ck-api.st1.test.lanxinka.com'
+   headers:
+        Content-Type: 'application/json'
+        Authorization: 'token'
+   account:
+     a_account: '17900000000'
+     b_account: '18000000000'
+     c_account: '19900000000'
+     c_account1: '19900000001'
+
+   c_login:
+     method: post
+     url: '/1.0/users/login'
+     param:
+        business_type: "7"
+        client_type: 2
+        login_from: 7
+        login_type: 1
+        mobile: "17621821955"
+        captcha: "123456"
+   c_sms_code:
+     method: post
+     url: '/1.0/users/login'
+
+
+
+   mysql:
+     host: rm-uf604jlf86e1s14warw.mysql.rds.aliyuncs.com
+     user: qa-write
+     pwd: Qatest@188
+     test_db: job_onsite
+
+
+
+srzp:
+  url: 'http://onsite-api.st1.test.lanxinka.com'

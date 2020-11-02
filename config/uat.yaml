@@ -1,0 +1,12 @@
+lxk:
+   url: 'http://ck-api.st1.test.lanxinka.com'
+   mysql:
+     host: rm-uf604jlf86e1s14warw.mysql.rds.aliyuncs.com
+     user: qa-write
+     pwd: Qatest@188
+     test_db: job_onsite
+
+
+
+srzp:
+  url: 'http://onsite-api.st1.test.lanxinka.com'

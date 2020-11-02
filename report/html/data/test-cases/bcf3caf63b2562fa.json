@@ -1,0 +1,129 @@
+{
+  "uid" : "bcf3caf63b2562fa",
+  "name" : "test_recommend_task[推荐任务-推荐任务列表-GET-1-/1.0/user/rec_task/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}--['select_list','select company_name,salary,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-[ 'company_name','salary','task_name']-]",
+  "fullName" : "testcase.LXK.test_002_recTask.Test#test_recommend_task[推荐任务-推荐任务列表-GET-1-/1.0/user/rec_task/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}--['select_list','select company_name,salary,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-",
+  "historyId" : "e7de78014c8bd4ddb7c185ae15a827ee",
+  "time" : {
+    "start" : 1579420369179,
+    "stop" : 1579420369720,
+    "duration" : 541
+  },
+  "description" : "\n        推荐任务\n        :param get_lxk_c_headers:\n        :param function:\n        :param casename:\n        :param type:\n        :param run:\n        :param url:\n        :param hearders:\n        :param param:\n        :param sql1:\n        :param sql2:\n        :param sql3:\n        :param asserttype:\n        :param expect1:\n        :param expect2:\n        :param expect3:\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    推荐任务\n    :param get_lxk_c_headers:\n    :param function:\n    :param casename:\n    :param type:\n    :param run:\n    :param url:\n    :param hearders:\n    :param param:\n    :param sql1:\n    :param sql2:\n    :param sql3:\n    :param asserttype:\n    :param expect1:\n    :param expect2:\n    :param expect3:\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_lxk_c_headers",
+    "time" : {
+      "start" : 1579420352807,
+      "stop" : 1579420353155,
+      "duration" : 348
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        推荐任务\n        :param get_lxk_c_headers:\n        :param function:\n        :param casename:\n        :param type:\n        :param run:\n        :param url:\n        :param hearders:\n        :param param:\n        :param sql1:\n        :param sql2:\n        :param sql3:\n        :param asserttype:\n        :param expect1:\n        :param expect2:\n        :param expect3:\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a01fd2cbf46083d6",
+      "name" : "log",
+      "source" : "a01fd2cbf46083d6.txt",
+      "type" : "text/plain",
+      "size" : 4912
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase.LXK"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test"
+  }, {
+    "name" : "suite",
+    "value" : "test_002_recTask"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-E581L0M"
+  }, {
+    "name" : "thread",
+    "value" : "8512-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.LXK.test_002_recTask"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "asserttype",
+    "value" : "'type1'"
+  }, {
+    "name" : "casename",
+    "value" : "'推荐任务列表'"
+  }, {
+    "name" : "expect1",
+    "value" : "'{\"code\":0,\"msg\":\"成功\"}'"
+  }, {
+    "name" : "expect2",
+    "value" : "'[ 'company_name','salary','task_name']'"
+  }, {
+    "name" : "expect3",
+    "value" : "''"
+  }, {
+    "name" : "function",
+    "value" : "'推荐任务'"
+  }, {
+    "name" : "hearders",
+    "value" : "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'"
+  }, {
+    "name" : "param",
+    "value" : "''"
+  }, {
+    "name" : "run",
+    "value" : "1"
+  }, {
+    "name" : "sql1",
+    "value" : "'['select_list','select company_name,salary,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 10']'"
+  }, {
+    "name" : "sql2",
+    "value" : "''"
+  }, {
+    "name" : "sql3",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'GET'"
+  }, {
+    "name" : "url",
+    "value" : "'/1.0/user/rec_task/list'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bcf3caf63b2562fa.json",
+  "parameterValues" : [ "'type1'", "'推荐任务列表'", "'{\"code\":0,\"msg\":\"成功\"}'", "'[ 'company_name','salary','task_name']'", "''", "'推荐任务'", "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'", "''", "1", "'['select_list','select company_name,salary,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 10']'", "''", "''", "'GET'", "'/1.0/user/rec_task/list'" ]
+}

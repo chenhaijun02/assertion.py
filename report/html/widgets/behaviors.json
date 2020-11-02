@@ -1,0 +1,70 @@
+{
+  "total" : 8,
+  "items" : [ {
+    "uid" : "bbef90621452979fa3ed17555de73d2a",
+    "name" : "实名绑卡",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "4af540cead4926fdc62c4484ca742d58",
+    "name" : "我的报名",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "1f721d696f5e21e6964d8f39d66bd23c",
+    "name" : "设置交易密码",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "a423abcd33a9095bc09127bc92d24f82",
+    "name" : "设置登录密码",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "0190e3c960ee194de6d5b46cda0a5c83",
+    "name" : "推荐任务",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "64c60f87562c288790583110029b2c04",
+    "name" : "推荐任务详情",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

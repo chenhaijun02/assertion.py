@@ -1,0 +1,307 @@
+"Status","Name","Duration in ms","Description"
+"passed","testcase.LXK.test_001_applyTask.Test#test_apply_task[我的报名-待签约页面-POST-1-/1.0/user/task/apply/list-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}-{""page"":1,""tab"":3}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.status in(2,4) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{""code"":0,""msg"":""成功""}-","657","
+        我的报名
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_005_bindBank.Test#test_set_password","223","
+        实名绑卡
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_003_recTaskDetail.Test#test_recommend_task_detail[推荐任务详情-推荐任务详情-GET-1-/1.0/user/rec_task/detail/-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}--['select_list','select company_name,salary,task_desc,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 1']---type1-{""code"":0,""msg"":""成功""}-","781","
+        推荐任务详情
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_001_applyTask.Test#test_apply_task[我的报名-全部页面-POST-1-/1.0/user/task/apply/list-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}-{""page"":1,""tab"":1}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{""code"":0,""msg"":""成功""}-","1050","
+        我的报名
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_005_bindBank.Test#test_set_password","198","
+        实名绑卡
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_004_setPassword.Test#test_set_password","351","
+        设置登录密码
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.run_all_test#test01","1",""
+"passed","testcase.LXK.test_004_setPassword.Test#test_set_password","379","
+        设置登录密码
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_005_bindBank.Test#test_set_password","259","
+        实名绑卡
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_005_bindBank.Test#test_set_password","419","
+        实名绑卡
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","run_all_test#test01","0",""
+"passed","testcase.LXK.test_002_recTask.Test#test_recommend_task[推荐任务-推荐任务列表-GET-1-/1.0/user/rec_task/list-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}--['select_list','select company_name,salary,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 10']---type1-{""code"":0,""msg"":""成功""}-","515","
+        推荐任务
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_006_setDealPwd.Test#test_set_deal_pwd[设置交易密码-设置7位格式不正确密码-POST-1-/1.0/user/bank/set_deal_pwd-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}-{""id_card_no"":""610523198806273676"",""op_type"":1,""password"":""1111111""}-----{""code"":100001,""msg"":""交易密码格式不正确"",""data"":[","170","
+        设置交易密码
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_006_setDealPwd.Test#test_set_deal_pwd","364","
+        设置交易密码
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_005_bindBank.Test#test_set_password","247","
+        实名绑卡
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_001_applyTask.Test#test_apply_task[我的报名-待审核页面-POST-1-/1.0/user/task/apply/list-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}-{""page"":1,""tab"":2}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.status in(1) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{""code"":0,""msg"":""成功""}-","707","
+        我的报名
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_001_applyTask.Test#test_apply_task[我的报名-已开工页面-POST-1-/1.0/user/task/apply/list-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}-{""page"":1,""tab"":4}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.status in(3) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{""code"":0,""msg"":""成功""}-","592","
+        我的报名
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "
+"passed","testcase.LXK.test_006_setDealPwd.Test#test_set_deal_pwd[设置交易密码-设置5位格式不正确密码-POST-1-/1.0/user/bank/set_deal_pwd-{""Content-Type"":""application/json"",""Authorization"":""Authorization""}-{""id_card_no"":""610523198806273676"",""op_type"":1,""password"":""11111""}-----{""code"":100001,""msg"":""交易密码格式不正确"",""data"":[","181","
+        设置交易密码
+        :param get_lxk_c_headers:
+        :param function:
+        :param casename:
+        :param type:
+        :param run:
+        :param url:
+        :param hearders:
+        :param param:
+        :param sql1:
+        :param sql2:
+        :param sql3:
+        :param asserttype:
+        :param expect1:
+        :param expect2:
+        :param expect3:
+        :return:
+        "

@@ -1,0 +1,48 @@
+lxk:
+  查企业id:
+    - select_list
+    - select id from ck_job.company_list where create_mobile={}
+  查企业用户id:
+    - select_list
+    - select id from ck_job.company_user where mobile={}
+  查团队id:
+    - select_list
+    - select id from ck_job.teams where company_user_id=(select id from ck_job.company_user where mobile={})
+  查C端用户id:
+    - select_list
+    - select user_id from ck_job.user where mobile in({})
+  加入团队:
+    - insert
+    - INSERT INTO `ck_job`.`team_users` (`company_user_id`,`team_id`,`user_id`,`name`,`mobile`,`id_card`,`import_record_id`,`status`,`source`,`released_at`,`created_at`,`updated_at`,`deleted_at`) VALUES ('{}','{}','{}','王荔','{}','610523198806273676','','1','1',NULL,'2019-12-23 17:46:02','2019-12-23 17:46:02',NULL)
+  解除用户团队:
+    - update
+    - update ck_job.team_users set status=2 where mobile={}
+  查任务id:
+    - select_list
+    - select id from ck_job.tasks where company_id=(select id from ck_job.company_list where create_mobile={0}) and team_ids=(select id from ck_job.teams where company_user_id=(select id from ck_job.company_user where mobile={0}) and users_type=1) order by id desc
+  报名任务:
+    - insert
+    - INSERT INTO `ck_job`.`user_tasks` (`user_id`,`task_id`,`company_id`,`task_name`,`task_user_name`,`task_user_mobile`,`task_user_age`,`task_user_id_card`,`task_sex`,`status`,`created_at`,`updated_at`,`deleted_at`) VALUES ('{}','{}','{}','自动化测试任务1','王荔','{}',NULL,'610523198806273676','1','{}','2019-12-25 15:35:02','2019-12-25 15:36:01',NULL)
+  删除已报名任务:
+    - del
+    - delete from ck_job.user_tasks where task_user_mobile={}
+  获取推荐任务id:
+    - select_list
+    - select id from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 1
+  设置登录密码为123456:
+    - update
+    - update ucenter.login_account_name set pwd="$2y$10$QofYHoZ3E1YQUGhK9Xql5.vYQWhHkIZK6QVDvixiX5TrBa73.i8oC" where name={}
+  清除登录密码:
+    - update
+    - update ucenter.login_account_name set pwd=null where name={}
+  实名绑卡:
+    - update
+    - update ck_job.user set id_card='610523198806273676',auth_status=1,studio_status=1 where mobile={}
+    - update ucenter.login_account set is_authed=1,name='王荔',id_card=610523198806273676,user_id=(select id from ucenter.users where id_card='610523198806273676' and deleted_at is null) where mobile={}
+  清除实名绑卡:
+    - update
+    - update ck_job.user set id_card=null,auth_status=0 where mobile={}
+    - update ucenter.login_account set is_authed=0,user_id=0,name=null,id_card=null where register_name={}
+  清除交易密码:
+    - update
+    - update ucenter.login_account set trading_pwd=null where mobile={}

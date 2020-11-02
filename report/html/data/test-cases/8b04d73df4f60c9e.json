@@ -1,0 +1,135 @@
+{
+  "uid" : "8b04d73df4f60c9e",
+  "name" : "test_set_password[实名绑卡-银行卡错误-POST-1-/1.0/user/bank/bindingBank-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"bank_card\":\"6214180100001571264\",\"id_card\":\"610523198806273676\"}-----{\"code\":260109,\"msg\":\"姓名/身份证/银行卡/实名认证失败\",\"data\":{}}--]",
+  "fullName" : "testcase.LXK.test_005_bindBank.Test#test_set_password",
+  "historyId" : "6e46406fc535defc5e6d01e410143538",
+  "time" : {
+    "start" : 1579420806041,
+    "stop" : 1579420806339,
+    "duration" : 298
+  },
+  "description" : "\n        实名绑卡\n        :param get_lxk_c_headers:\n        :param function:\n        :param casename:\n        :param type:\n        :param run:\n        :param url:\n        :param hearders:\n        :param param:\n        :param sql1:\n        :param sql2:\n        :param sql3:\n        :param asserttype:\n        :param expect1:\n        :param expect2:\n        :param expect3:\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    实名绑卡\n    :param get_lxk_c_headers:\n    :param function:\n    :param casename:\n    :param type:\n    :param run:\n    :param url:\n    :param hearders:\n    :param param:\n    :param sql1:\n    :param sql2:\n    :param sql3:\n    :param asserttype:\n    :param expect1:\n    :param expect2:\n    :param expect3:\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_lxk_c_headers",
+    "time" : {
+      "start" : 1579420792581,
+      "stop" : 1579420792890,
+      "duration" : 309
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        实名绑卡\n        :param get_lxk_c_headers:\n        :param function:\n        :param casename:\n        :param type:\n        :param run:\n        :param url:\n        :param hearders:\n        :param param:\n        :param sql1:\n        :param sql2:\n        :param sql3:\n        :param asserttype:\n        :param expect1:\n        :param expect2:\n        :param expect3:\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9c718c4b595c9877",
+      "name" : "log",
+      "source" : "9c718c4b595c9877.txt",
+      "type" : "text/plain",
+      "size" : 330
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "蓝薪卡"
+  }, {
+    "name" : "story",
+    "value" : "实名绑卡"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test"
+  }, {
+    "name" : "suite",
+    "value" : "test_005_bindBank"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.LXK"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-E581L0M"
+  }, {
+    "name" : "thread",
+    "value" : "16560-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.LXK.test_005_bindBank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "asserttype",
+    "value" : "''"
+  }, {
+    "name" : "casename",
+    "value" : "'银行卡错误'"
+  }, {
+    "name" : "expect1",
+    "value" : "'{\"code\":260109,\"msg\":\"姓名/身份证/银行卡/实名认证失败\",\"data\":{}}'"
+  }, {
+    "name" : "expect2",
+    "value" : "''"
+  }, {
+    "name" : "expect3",
+    "value" : "''"
+  }, {
+    "name" : "function",
+    "value" : "'实名绑卡'"
+  }, {
+    "name" : "hearders",
+    "value" : "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'"
+  }, {
+    "name" : "param",
+    "value" : "'{\"bank_card\":\"6214180100001571264\",\"id_card\":\"610523198806273676\"}'"
+  }, {
+    "name" : "run",
+    "value" : "1"
+  }, {
+    "name" : "sql1",
+    "value" : "''"
+  }, {
+    "name" : "sql2",
+    "value" : "''"
+  }, {
+    "name" : "sql3",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'POST'"
+  }, {
+    "name" : "url",
+    "value" : "'/1.0/user/bank/bindingBank'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8b04d73df4f60c9e.json",
+  "parameterValues" : [ "''", "'银行卡错误'", "'{\"code\":260109,\"msg\":\"姓名/身份证/银行卡/实名认证失败\",\"data\":{}}'", "''", "''", "'实名绑卡'", "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'", "'{\"bank_card\":\"6214180100001571264\",\"id_card\":\"610523198806273676\"}'", "1", "''", "''", "''", "'POST'", "'/1.0/user/bank/bindingBank'" ]
+}

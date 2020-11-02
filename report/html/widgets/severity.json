@@ -1,0 +1,181 @@
+[ {
+  "uid" : "53eabcae1480b721",
+  "name" : "test_set_password[实名绑卡-实名绑卡成功-POST-1-/1.0/user/bank/bindingBank-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"bank_card\":\"6214180100001571265\",\"id_card\":\"610523198806273676\"}-----{\"code\":0,\"msg\":\"成功\",\"data\":{}}--]",
+  "time" : {
+    "start" : 1579421092766,
+    "stop" : 1579421093185,
+    "duration" : 419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "493a0ae6a631dae1",
+  "name" : "test01",
+  "time" : {
+    "start" : 1578991408816,
+    "stop" : 1578991408816,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b82fa459931d10a",
+  "name" : "test_set_password[设置登录密码-设置6位密码-POST-1-/1.0/users/set/password-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"business_type\":7,\"password\":\"111111\"}-----{\"code\":0,\"msg\":\"成功\"}--]",
+  "time" : {
+    "start" : 1579421086556,
+    "stop" : 1579421086907,
+    "duration" : 351
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33f640d0a5a0434f",
+  "name" : "test_set_password[实名绑卡-身份证位数不足-POST-1-/1.0/user/bank/bindingBank-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"bank_card\":\"6214180100001571265\",\"id_card\":\"61052319880627367\"}-----{\"code\":260310,\"msg\":\"身份证号格式错误\",\"data\":{}}--]",
+  "time" : {
+    "start" : 1579421092194,
+    "stop" : 1579421092392,
+    "duration" : 198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c057c7cc9182ab78",
+  "name" : "test_set_deal_pwd[设置交易密码-设置6位正确密码-POST-1-/1.0/user/bank/set_deal_pwd-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"id_card_no\":\"610523198806273676\",\"op_type\":1,\"password\":\"111111\"}-----{\"code\":0,\"msg\":\"成功\",\"data\":{}}--]",
+  "time" : {
+    "start" : 1579421097539,
+    "stop" : 1579421097903,
+    "duration" : 364
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65b266978b1cda4e",
+  "name" : "test_apply_task[我的报名-全部页面-POST-1-/1.0/user/task/apply/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"page\":1,\"tab\":1}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-['company_name', 'task_name','type_child_name']-]",
+  "time" : {
+    "start" : 1579421080387,
+    "stop" : 1579421081437,
+    "duration" : 1050
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a225d51f58657de",
+  "name" : "test_set_password[设置登录密码-设置20位密码-POST-1-/1.0/users/set/password-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"business_type\":7,\"password\":\"11111111111111111111\"}-----{\"code\":0,\"msg\":\"成功\"}--]",
+  "time" : {
+    "start" : 1579421087454,
+    "stop" : 1579421087833,
+    "duration" : 379
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52fe50649af467e3",
+  "name" : "test01",
+  "time" : {
+    "start" : 1578992103984,
+    "stop" : 1578992103985,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2749936cfe424199",
+  "name" : "test_set_password[实名绑卡-身份证错误-POST-1-/1.0/user/bank/bindingBank-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"bank_card\":\"6214180100001571265\",\"id_card\":\"610523198806273675\"}-----{\"code\":260109,\"msg\":\"姓名/身份证/银行卡/实名认证失败\",\"data\":{}}--]",
+  "time" : {
+    "start" : 1579421091606,
+    "stop" : 1579421091865,
+    "duration" : 259
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50a7c43b1f06a262",
+  "name" : "test_apply_task[我的报名-待签约页面-POST-1-/1.0/user/task/apply/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"page\":1,\"tab\":3}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.status in(2,4) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-['company_name', 'task_name','type_child_name']-]",
+  "time" : {
+    "start" : 1579421082236,
+    "stop" : 1579421082893,
+    "duration" : 657
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "55467bbec74e6f53",
+  "name" : "test_set_password[实名绑卡-银行卡位数不足-POST-1-/1.0/user/bank/bindingBank-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"bank_card\":\"62141801000015712\",\"id_card\":\"610523198806273676\"}-----{\"code\":260311,\"msg\":\"银行卡号格式错误\",\"data\":{}}--]",
+  "time" : {
+    "start" : 1579421092455,
+    "stop" : 1579421092702,
+    "duration" : 247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb83aeab1870e8e2",
+  "name" : "test_set_deal_pwd[设置交易密码-设置7位格式不正确密码-POST-1-/1.0/user/bank/set_deal_pwd-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"id_card_no\":\"610523198806273676\",\"op_type\":1,\"password\":\"1111111\"}-----{\"code\":100001,\"msg\":\"交易密码格式不正确\",\"data\":[[\"password\"]]}--]",
+  "time" : {
+    "start" : 1579421097333,
+    "stop" : 1579421097503,
+    "duration" : 170
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e09b1ac69542f888",
+  "name" : "test_set_deal_pwd[设置交易密码-设置5位格式不正确密码-POST-1-/1.0/user/bank/set_deal_pwd-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"id_card_no\":\"610523198806273676\",\"op_type\":1,\"password\":\"11111\"}-----{\"code\":100001,\"msg\":\"交易密码格式不正确\",\"data\":[[\"password\"]]}--]",
+  "time" : {
+    "start" : 1579421097086,
+    "stop" : 1579421097267,
+    "duration" : 181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ac34f953cdb4f3f",
+  "name" : "test_recommend_task_detail[推荐任务详情-推荐任务详情-GET-1-/1.0/user/rec_task/detail/-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}--['select_list','select company_name,salary,task_desc,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 1']---type1-{\"code\":0,\"msg\":\"成功\"}-[ 'task_name','company_name','salary','task_desc']-]",
+  "time" : {
+    "start" : 1579421085264,
+    "stop" : 1579421086045,
+    "duration" : 781
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81b78a2e7ebccf6b",
+  "name" : "test_recommend_task[推荐任务-推荐任务列表-GET-1-/1.0/user/rec_task/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}--['select_list','select company_name,salary,task_name from ck_job.recommended_task where is_recommended=2 and deleted_at is null order by updated_at desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-[ 'company_name','salary','task_name']-]",
+  "time" : {
+    "start" : 1579421084377,
+    "stop" : 1579421084892,
+    "duration" : 515
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4a7b23ef106ae6a",
+  "name" : "test_apply_task[我的报名-已开工页面-POST-1-/1.0/user/task/apply/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"page\":1,\"tab\":4}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.status in(3) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-['company_name', 'task_name','type_child_name']-]",
+  "time" : {
+    "start" : 1579421083016,
+    "stop" : 1579421083608,
+    "duration" : 592
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23939b28a881f588",
+  "name" : "test_apply_task[我的报名-待审核页面-POST-1-/1.0/user/task/apply/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"page\":1,\"tab\":2}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.status in(1) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-['company_name', 'task_name','type_child_name']-]",
+  "time" : {
+    "start" : 1579421081488,
+    "stop" : 1579421082195,
+    "duration" : 707
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcd07a4fc630cd62",
+  "name" : "test_set_password[实名绑卡-银行卡错误-POST-1-/1.0/user/bank/bindingBank-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"bank_card\":\"6214180100001571264\",\"id_card\":\"610523198806273676\"}-----{\"code\":260109,\"msg\":\"姓名/身份证/银行卡/实名认证失败\",\"data\":{}}--]",
+  "time" : {
+    "start" : 1579421091922,
+    "stop" : 1579421092145,
+    "duration" : 223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

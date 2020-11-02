@@ -1,0 +1,129 @@
+{
+  "uid" : "7fc83b7614d0d763",
+  "name" : "test_apply_task[我的报名-全部页面-POST-1-/1.0/user/task/apply/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"page\":1,\"tab\":1}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-['company_name', 'task_name','type_child_name']-]",
+  "fullName" : "testcase.LXK.test_001_applyTask.Test#test_apply_task[我的报名-全部页面-POST-1-/1.0/user/task/apply/list-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"page\":1,\"tab\":1}-['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']---type1-{\"code\":0,\"msg\":\"成功\"}-",
+  "historyId" : "0425200a608dfad39ffbaa87bbb3bc92",
+  "time" : {
+    "start" : 1579418378162,
+    "stop" : 1579418378689,
+    "duration" : 527
+  },
+  "description" : "\n        我的报名\n        :param get_lxk_c_headers:\n        :param function:\n        :param casename:\n        :param type:\n        :param run:\n        :param url:\n        :param hearders:\n        :param param:\n        :param sql1:\n        :param sql2:\n        :param sql3:\n        :param asserttype:\n        :param expect1:\n        :param expect2:\n        :param expect3:\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    我的报名\n    :param get_lxk_c_headers:\n    :param function:\n    :param casename:\n    :param type:\n    :param run:\n    :param url:\n    :param hearders:\n    :param param:\n    :param sql1:\n    :param sql2:\n    :param sql3:\n    :param asserttype:\n    :param expect1:\n    :param expect2:\n    :param expect3:\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_lxk_c_headers",
+    "time" : {
+      "start" : 1579418373385,
+      "stop" : 1579418374033,
+      "duration" : 648
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        我的报名\n        :param get_lxk_c_headers:\n        :param function:\n        :param casename:\n        :param type:\n        :param run:\n        :param url:\n        :param hearders:\n        :param param:\n        :param sql1:\n        :param sql2:\n        :param sql3:\n        :param asserttype:\n        :param expect1:\n        :param expect2:\n        :param expect3:\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "64b9e07925a81b40",
+      "name" : "log",
+      "source" : "64b9e07925a81b40.txt",
+      "type" : "text/plain",
+      "size" : 4065
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "subSuite",
+    "value" : "Test"
+  }, {
+    "name" : "suite",
+    "value" : "test_001_applyTask"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.LXK"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-E581L0M"
+  }, {
+    "name" : "thread",
+    "value" : "21264-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.LXK.test_001_applyTask"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "asserttype",
+    "value" : "'type1'"
+  }, {
+    "name" : "casename",
+    "value" : "'全部页面'"
+  }, {
+    "name" : "expect1",
+    "value" : "'{\"code\":0,\"msg\":\"成功\"}'"
+  }, {
+    "name" : "expect2",
+    "value" : "'['company_name', 'task_name','type_child_name']'"
+  }, {
+    "name" : "expect3",
+    "value" : "''"
+  }, {
+    "name" : "function",
+    "value" : "'我的报名'"
+  }, {
+    "name" : "hearders",
+    "value" : "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'"
+  }, {
+    "name" : "param",
+    "value" : "'{\"page\":1,\"tab\":1}'"
+  }, {
+    "name" : "run",
+    "value" : "1"
+  }, {
+    "name" : "sql1",
+    "value" : "'['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']'"
+  }, {
+    "name" : "sql2",
+    "value" : "''"
+  }, {
+    "name" : "sql3",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'POST'"
+  }, {
+    "name" : "url",
+    "value" : "'/1.0/user/task/apply/list'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7fc83b7614d0d763.json",
+  "parameterValues" : [ "'type1'", "'全部页面'", "'{\"code\":0,\"msg\":\"成功\"}'", "'['company_name', 'task_name','type_child_name']'", "''", "'我的报名'", "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'", "'{\"page\":1,\"tab\":1}'", "1", "'['select_list','select t.company_name,t.type_child_name,t.name from ck_job.user_tasks u inner join ck_job.tasks t on u.task_id=t.id where u.user_id=(select user_id from ck_job.user where mobile={}) and u.deleted_at is null order by u.created_at DESC,u.id desc limit 10']'", "''", "''", "'POST'", "'/1.0/user/task/apply/list'" ]
+}

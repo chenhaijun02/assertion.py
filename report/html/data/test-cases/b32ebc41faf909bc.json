@@ -1,0 +1,135 @@
+{
+  "uid" : "b32ebc41faf909bc",
+  "name" : "test_set_deal_pwd[设置交易密码-设置5位格式不正确密码-POST-1-/1.0/user/bank/set_deal_pwd-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"id_card_no\":\"610523198806273676\",\"op_type\":1,\"password\":\"11111\"}-----{\"code\":100001,\"msg\":\"交易密码格式不正确\",\"data\":[[\"password\"]]}--]",
+  "fullName" : "testcase.LXK.test_006_setDealPwd.Test#test_set_deal_pwd[设置交易密码-设置5位格式不正确密码-POST-1-/1.0/user/bank/set_deal_pwd-{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}-{\"id_card_no\":\"610523198806273676\",\"op_type\":1,\"password\":\"11111\"}-----{\"code\":100001,\"msg\":\"交易密码格式不正确\",\"data\":[",
+  "historyId" : "c8388537ff95e089df565140507c46f9",
+  "time" : {
+    "start" : 1579420379328,
+    "stop" : 1579420379505,
+    "duration" : 177
+  },
+  "description" : "casename",
+  "descriptionHtml" : "<p>casename</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_lxk_c_headers",
+    "time" : {
+      "start" : 1579420352807,
+      "stop" : 1579420353155,
+      "duration" : 348
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "casename",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b63375778589d8d4",
+      "name" : "log",
+      "source" : "b63375778589d8d4.txt",
+      "type" : "text/plain",
+      "size" : 353
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "设置交易密码"
+  }, {
+    "name" : "feature",
+    "value" : "蓝薪卡"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.LXK"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test"
+  }, {
+    "name" : "suite",
+    "value" : "test_006_setDealPwd"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-E581L0M"
+  }, {
+    "name" : "thread",
+    "value" : "8512-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.LXK.test_006_setDealPwd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "asserttype",
+    "value" : "''"
+  }, {
+    "name" : "casename",
+    "value" : "'设置5位格式不正确密码'"
+  }, {
+    "name" : "expect1",
+    "value" : "'{\"code\":100001,\"msg\":\"交易密码格式不正确\",\"data\":[[\"password\"]]}'"
+  }, {
+    "name" : "expect2",
+    "value" : "''"
+  }, {
+    "name" : "expect3",
+    "value" : "''"
+  }, {
+    "name" : "function",
+    "value" : "'设置交易密码'"
+  }, {
+    "name" : "hearders",
+    "value" : "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'"
+  }, {
+    "name" : "param",
+    "value" : "'{\"id_card_no\":\"610523198806273676\",\"op_type\":1,\"password\":\"11111\"}'"
+  }, {
+    "name" : "run",
+    "value" : "1"
+  }, {
+    "name" : "sql1",
+    "value" : "''"
+  }, {
+    "name" : "sql2",
+    "value" : "''"
+  }, {
+    "name" : "sql3",
+    "value" : "''"
+  }, {
+    "name" : "type",
+    "value" : "'POST'"
+  }, {
+    "name" : "url",
+    "value" : "'/1.0/user/bank/set_deal_pwd'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b32ebc41faf909bc.json",
+  "parameterValues" : [ "''", "'设置5位格式不正确密码'", "'{\"code\":100001,\"msg\":\"交易密码格式不正确\",\"data\":[[\"password\"]]}'", "''", "''", "'设置交易密码'", "'{\"Content-Type\":\"application/json\",\"Authorization\":\"Authorization\"}'", "'{\"id_card_no\":\"610523198806273676\",\"op_type\":1,\"password\":\"11111\"}'", "1", "''", "''", "''", "'POST'", "'/1.0/user/bank/set_deal_pwd'" ]
+}

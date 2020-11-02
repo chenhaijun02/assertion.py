@@ -1,0 +1,3 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:208 Starting new HTTP connection (1): ck-api.st1.test.lanxinka.com
+DEBUG    urllib3.connectionpool:connectionpool.py:396 http://ck-api.st1.test.lanxinka.com:80 "POST /1.0/user/bank/bindingBank HTTP/1.1" 200 None
+INFO     root:logs.py:29 实名绑卡——银行卡位数不足【PASS】

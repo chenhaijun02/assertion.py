@@ -1,0 +1,352 @@
+—————创建管理端账号
+1、查询有没有管理端账号，如果没有执行2 3 4
+select id from ck_job.admin_users where mobile=17900000000
+2、插入管理端账号
+INSERT INTO ck_job.admin_users (
+	`name`,
+	`mobile`,
+	`password`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'管理端自动化账号1',
+		'17900000000',
+		'$2y$10$wP2X/DdHF7wCHz7SCQiELeo.cnljQF7QZS8idmqPliuFXlL53ikrG',
+		'2019-07-12 19:23:39',
+		'2019-12-10 15:31:40',
+		NULL
+	);
+3、查询1插入管理端账号user_id放入4中
+4、插入管理端账号权限
+查权限
+select * from ck_job.admin_role_users where user_id=(select id from ck_job.admin_users where mobile=17900000000)
+插入权限
+user_id、role_id
+INSERT INTO ck_job.admin_role_users (`user_id`, `role_id`) VALUES ('164', '4');
+
+
+
+—————创建企业端账号
+1、查询有没有企业端账号，如果没有执行2
+select id from ck_job.company_user where mobile=18000000000
+2、插入企业端账号
+INSERT INTO ck_job.company_user (
+	`account`,
+	`name`,
+	`email`,
+	`reg_ip`,
+	`mobile`,
+	`password`,
+	`status`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'18000000000',
+		'企业端自动化账号1',
+		NULL,
+		'100.117.46.39',
+		'18000000000',
+		'9ea26c80371280d9f3970995025f3873',
+		'1',
+		'2019-07-12 19:24:20',
+		'2019-12-12 16:54:51',
+		NULL
+	);
+
+—————创建项目
+1、查询有没有项目，如果没有执行2、3
+select id from company_list where create_mobile=18000000000
+2、查询企业端用户id
+select id from company_user where mobile=18000000000
+3、替换company_user_id和proposer_id为企业端用户id
+INSERT INTO `ck_job`.`company_list` (
+	`company_user_id`
+	`name`,
+	`create_name`,
+	`create_mobile`,
+	`balance`,
+	`short_name`,
+	`full_name`,
+	`id_card`,
+	`card_img_face`,
+	`card_img_back`,
+	`business_img`,
+	`scale_id`,
+	`city_code`,
+	`city_name`,
+	`status_protocol`,
+	`status`,
+	`manager_name`,
+	`manager_mobile`,
+	`proposer_id`,
+	`subject_id`,
+	`rng_company_id`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'23',
+		'王荔',
+		'自动化',
+		'18000000000',
+		'0',
+		'自动化简称',
+		'自动化全称',
+		'',
+		'',
+		'',
+		'',
+		NULL,
+		'31000',
+		'上海',
+		'1',
+		'2',
+		'自动化',
+		'18000000000',
+		'23',
+		'0',
+		'0',
+		'2019-12-13 11:20:28',
+		'2019-12-13 11:20:28',
+		NULL
+	);
+
+
+—————创建团队
+1、查询有没有团队，如果没有执行2、3、4
+select * from teams where company_user_id=(select id from company_user where mobile=18000000000)
+
+2、查询企业端用户id  替换company_user_id
+select id from company_user where mobile=18000000000
+3、查询项目id替换company_id
+select id from company_list where create_mobile=18000000000
+
+4、替换company_id为项目id和company_user_id为企业端用户id
+users_type 1 创客用户、 2 劳务费用户 、3 汇总代开用户',
+INSERT INTO `ck_job`.`teams` (
+	`company_id`,
+	`company_user_id`,
+	`company_user_mobile`,
+	`name`,
+	`member_count`,
+	`status`,
+	`type`,
+	`users_type`,
+	`is_daikai`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'216',
+		'23',
+		NULL,
+		'自动化创客团队',
+		'1',
+		'1',
+		'2',
+		'1',
+		'0',
+		'2019-12-11 16:24:38',
+		'2019-12-11 16:24:41',
+		NULL
+	);
+
+
+
+
+—————创建任务
+1、查询任务,如果未查到，执行2、3、4、5
+select * from tasks where company_id=(select id from company_list where create_mobile=18000000000) and team_ids=(select id from teams where company_user_id=(select id from company_user where mobile=18000000000) and users_type=1)
+2、查项目信息 替换company_id、company_name
+select id,short_name,company_user_id from company_list where create_mobile=18000000000
+3、查企业用户信息 替换company_user_id、company_user_name
+select id,name,account from ck_job.company_user where mobile=18000000000
+4、查团队id 替换team_ids
+select id from teams where company_user_id=(select id from company_user where mobile=18000000000) and users_type=1
+5、插入任务
+替换company_user_mobile、company_creator_name、company_creator_mobile、name
+
+INSERT INTO `ck_job`.`tasks` (
+	`status`,
+	`company_id`,
+	`company_name`,
+	`company_user_id`,
+	`company_user_name`,
+	`company_user_mobile`,
+	`company_creator_name`,
+	`company_creator_mobile`,
+	`team_ids`,
+	`name`,
+	`type_parent_id`,
+	`type_parent_name`,
+	`type_child_id`,
+	`type_child_name`,
+	`content`,
+	`review_desc`,
+	`published_at`,
+	`send_verify_at`,
+	`verify_at`,
+	`verify_admin_user_id`,
+	`verify_admin_user_name`,
+	`users_type`,
+	`paused_at`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'21',
+		'216',
+		'自动化简称',
+		'23',
+		'企业端自动化账号1',
+		'18000000000',
+		'自动化',
+		'18000000000',
+		'227',
+		'自动化测试任务1',
+		'1',
+		'设计',
+		'8',
+		'创意设计',
+		'任务说明：自动化测试任务1',
+		NULL,
+		'2019-12-25 11:26:41',
+		'2019-12-25 11:26:21',
+		'2019-12-25 11:26:41',
+		'98',
+		'王荔',
+		'1',
+		NULL,
+		'2019-12-25 11:26:21',
+		'2019-12-25 11:26:41',
+		NULL
+	);
+
+6、插入任务与团队关联
+查最新任务id
+select id from tasks where company_id=(select id from company_list where create_mobile=18000000000) and team_ids=(select id from teams where company_user_id=(select id from company_user where mobile=18000000000) and users_type=1) order by id desc
+
+替换task_id、team_id
+INSERT INTO `ck_job`.`task_teams` (
+	`task_id`,
+	`team_id`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'268',
+		'227',
+		'2019-12-25 15:35:11',
+		'2019-12-25 15:35:13',
+		NULL
+	);
+
+
+—————加入团队
+1、查询用户是否再团队，如果没有，执行2、3
+select id from ck_job.team_users where user_id=(select user_id from user where mobile=19900000000) and status=1
+2、查询企业端用户id替换company_user_id
+select id from ck_job.company_user where mobile=18000000000
+3、查询团队id替换team_id
+select id from ck_job.teams where company_user_id=(select id from company_user where mobile=18000000000)
+4、查询用户id替换user_id
+select user_id from ck_job.user where mobile in(19900000000)
+5、加入团队
+company_user_id、team_id、user_id、报名用户姓名name、报名用户手机mobile
+
+INSERT INTO `ck_job`.`team_users` (
+	`company_user_id`,
+	`team_id`,
+	`user_id`,
+	`name`,
+	`mobile`,
+	`id_card`,
+	`import_record_id`,
+	`status`,
+	`source`,
+	`released_at`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'23',
+		'227',
+		'44959',
+		'王荔',
+		'19900000000',
+		'610523198806273676',
+		'',
+		'1',
+		'1',
+		NULL,
+		'2019-12-23 17:46:02',
+		'2019-12-23 17:46:02',
+		NULL
+	);
+6、解除团队
+update ck_job.team_users set status=2 where mobile=19900000000
+
+
+——报名任务
+
+1、查询用户id
+select user_id from ck_job.user where mobile in(19900000000)
+2、查任务id
+select id from ck_job.tasks where company_id=(select id from company_list where create_mobile=18000000000) and team_ids=(select id from teams where company_user_id=(select id from company_user where mobile=18000000000) and users_type=1) order by id desc
+3、查企业id
+select id from ck_job.company_list where create_mobile=18000000000
+4、报名任务
+用户user_id、任务task_id、项目company_id、任务名task_name、报名人姓名task_user_name、报名人手机号task_user_mobile、status
+INSERT INTO `ck_job`.`user_tasks` (
+	`user_id`,
+	`task_id`,
+	`company_id`,
+	`task_name`,
+	`task_user_name`,
+	`task_user_mobile`,
+	`task_user_age`,
+	`task_user_id_card`,
+	`task_sex`,
+	`status`,
+	`created_at`,
+	`updated_at`,
+	`deleted_at`
+)
+VALUES
+	(
+		'44959',
+		'269',
+		'216',
+		'自动化测试任务1',
+		'王荔',
+		'19900000000',
+		NULL,
+		'610523198806273676',
+		'1',
+		'1',
+		'2019-12-25 15:35:02',
+		'2019-12-25 15:36:01',
+		NULL
+	);
+5、删已报名的任务
+delete from ck_job.user_tasks where task_user_mobile=19900000000
+
+——实名数据和绑卡数据需提前备份
+ucenter.users
+ucenter.user_bank_card

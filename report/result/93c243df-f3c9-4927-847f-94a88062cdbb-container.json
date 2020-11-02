@@ -1,0 +1,1 @@
+{"befores": [{"name": "_Class__pytest_setup_class", "start": 1579414808655, "status": "passed", "stop": 1579414809429}], "afters": [{"name": "_Class__pytest_setup_class::0", "start": 1579414811390, "status": "passed", "stop": 1579414811390}], "start": 1579414808655, "uuid": "45a8c995-047f-4a6d-a058-e15b770b957f", "stop": 1579414811390}
